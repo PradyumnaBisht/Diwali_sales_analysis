@@ -1,66 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diwali Sales Analysis - README</title>
-</head>
-<body>
-    <h1>Diwali Sales Analysis</h1>
-    <p>This Jupyter notebook presents an analysis of Diwali sales data. It covers data loading, preprocessing, and visualization to understand customer purchasing behavior during the Diwali season.</p>
-    
-  <h2>Prerequisites</h2>
-    <ul>
-        <li>Python 3.x</li>
-        <li>Jupyter Notebook</li>
-        <li>Required Libraries:
-            <ul>
-                <li>NumPy</li>
-                <li>Pandas</li>
-                <li>Matplotlib</li>
-                <li>Seaborn</li>
-                <li>Plotly</li>
-                <li>Scikit-learn</li>
-            </ul>
-        </li>
-    </ul>
+![image](https://github.com/user-attachments/assets/0b5da75a-4eb4-4c8a-846b-441bff6ddbc8)
 
-  <h2>Data</h2>
-    <p>The dataset used for this analysis is stored in a CSV file named <code>Diwali Sales Data.csv</code>. It consists of 11,251 rows and 15 columns, including customer demographic information, product details, and sales figures.</p>
+# Diwali Sales Analysis
 
-  <h2>Key Columns in the Dataset</h2>
-  <ul>
-        <li><strong>User_ID</strong>: Unique identifier for customers</li>
-        <li><strong>Cust_name</strong>: Customer names</li>
-        <li><strong>Product_ID</strong>: Unique product identifiers</li>
-        <li><strong>Gender</strong>: Gender of customers</li>
-        <li><strong>Age Group</strong>: Age group of customers</li>
-        <li><strong>State</strong>: State of residence</li>
-        <li><strong>Occupation</strong>: Customer's occupation</li>
-        <li><strong>Amount</strong>: Purchase amount</li>
-        <!-- Add more columns as needed -->
-    </ul>
+This project analyzes Diwali sales data to uncover trends and insights about customer demographics, purchasing patterns, and sales performance across different states, age groups, and product categories.
 
-   <h2>Overview of the Analysis</h2>
-    <p>The analysis involves:</p>
-  <ul>
-        <li>Loading and inspecting the data</li>
-        <li>Data cleaning (e.g., handling missing values)</li>
-        <li>Exploratory data analysis (EDA) to visualize key trends</li>
-        <li>Linear regression model to predict certain outcomes (e.g., sales amount)</li>
-    </ul>
+## Overview
 
-  <h2>How to Run the Notebook</h2>
-    <ol>
-        <li>Install the required Python libraries if not already installed.</li>
-        <li>Open the Jupyter notebook using the command <code>jupyter notebook</code>.</li>
-        <li>Run the cells in sequence to execute the analysis.</li>
-    </ol>
+The Diwali Sales Analysis project aims to explore consumer behavior during the Diwali festival shopping season. The dataset used contains customer data, including gender, age, marital status, occupation, and sales details such as the number of orders and total amount spent.
 
-  <h2>Contributing</h2>
-    <p>If you wish to contribute to this project, feel free to fork the repository and submit a pull request with your changes.</p>
+## Key Libraries Used
 
-   <h2>License</h2>
-    <p>This project is open-source and available under the <a href="#">MIT License</a>.</p>
-</body>
-</html>
+- **NumPy**: For numerical computations.
+- **Pandas**: For data manipulation and analysis.
+- **Matplotlib**: For creating visualizations.
+- **Seaborn**: For statistical data visualization.
+
+## Dataset
+
+The dataset is imported from a CSV file: `Diwali Sales Data.csv`. It includes several columns, such as:
+
+- **Gender**
+- **Age Group**
+- **Marital Status**
+- **Occupation**
+- **Product Category**
+- **State**
+- **Orders**
+- **Amount**
+
+## Data Cleaning and Preparation
+
+The following steps were performed to clean and prepare the data for analysis:
+
+- Dropped unrelated or blank columns (`Status` and `unnamed1`).
+- Checked and handled missing values by removing rows with null values.
+- Converted the data type of the `Amount` column from string to integer.
+- Renamed the `Marital_Status` column to `Shaadi` for better readability.
+
+## Exploratory Data Analysis (EDA)
+
+The analysis included the following key areas:
+
+### Gender
+- A bar chart was plotted to show the distribution of buyers by gender.
+- The purchasing power of females is higher compared to males.
+
+### Age
+- Buyers aged 26-35 years make up the largest group.
+- A bar chart was used to show the age distribution of buyers by gender.
+
+### State
+- Top 10 states by the number of orders and total sales were identified. Uttar Pradesh, Maharashtra, and Karnataka were the leading states.
+
+### Marital Status
+- Married individuals, especially women, tend to purchase more, showing higher purchasing power.
+
+### Occupation
+- Most buyers work in IT, Healthcare, and Aviation sectors.
+
+### Product Category
+- Popular product categories include Food, Clothing, and Electronics.
+
+### Top Products
+- The most sold products by `Product_ID` were identified and visualized.
+
+## Conclusion
+
+Key insights from the analysis:
+
+- **Demographic trends**: Married women aged 26-35 from Uttar Pradesh, Maharashtra, and Karnataka working in IT, Healthcare, and Aviation are more likely to purchase during Diwali.
+- **Product preferences**: The top-selling categories are Food, Clothing, and Electronics.
+
+## Thank You
+
+This analysis helps in understanding consumer behavior during the Diwali season, which can guide businesses in making data-driven decisions for future campaigns.

@@ -1,5 +1,4 @@
 
-![image](https://github.com/user-attachments/assets/0b5da75a-4eb4-4c8a-846b-441bff6ddbc8)
 
 # Diwali Sales Analysis
 
@@ -64,6 +63,11 @@ The analysis included the following key areas:
 
 ### Top Products
 - The most sold products by `Product_ID` were identified and visualized.
+
+### Prediction (Actual vs Predicted Sales)
+![image](https://github.com/user-attachments/assets/0b5da75a-4eb4-4c8a-846b-441bff6ddbc8)
+
+
 
 ## Conclusion
 
